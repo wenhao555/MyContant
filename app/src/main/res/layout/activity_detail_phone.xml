@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_phone">
+
+    <TextView
+        android:id="@+id/title_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:text="@string/title_detail"
+        android:textSize="20dip" />
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip">
+
+        <!-- name -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="35dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/phone_name"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16dip" />
+        </TableRow>
+        <!-- phonenumber -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:paddingTop="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/phone_number"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/detail_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16dip" />
+        </TableRow>
+        <!-- Email -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:paddingTop="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/phone_email"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/detail_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16dip" />
+        </TableRow>
+        <!-- company -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:paddingTop="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/phone_company"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/detail_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16dip" />
+        </TableRow>
+        <!-- address -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:paddingTop="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/phone_address"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/detail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16dip" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="60dip"
+            android:layout_marginRight="10dip">
+
+            <Button
+                android:id="@+id/detail_modificate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="#CAFF6C"
+                android:text="@string/bt_modificate"
+                android:textSize="16dip" />
+
+            <Button
+                android:id="@+id/detail_dail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.0"
+                android:background="#CAFF6C"
+                android:text="@string/dail"
+                android:textSize="16dip" />
+
+            <Button
+                android:id="@+id/detail_sendmassage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="#CAFF6C"
+                android:text="@string/send_massage"
+                android:textSize="16dip" />
+
+            <Button
+                android:id="@+id/detail_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="#CAFF6C"
+                android:text="@string/delete"
+                android:textSize="16dip" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

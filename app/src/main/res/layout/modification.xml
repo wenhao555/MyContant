@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F8F4"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40.0px"
+        android:layout_marginTop="40.0px"
+        android:layout_marginRight="40.0px"
+        android:paddingTop="21.0px"
+        android:paddingBottom="10.0px">
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/title_modifaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="5.0px"
+            android:text="@string/mf_lable_title"
+            android:textSize="24dip"
+
+            />
+        <!-- 姓名 -->
+        <EditText
+            android:id="@+id/mf_ph_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="60.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginBottom="5.0px"
+            android:background="@drawable/list_kuang"
+            android:inputType="text"
+            android:maxLength="10"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mf_ph_name"
+            android:layout_alignTop="@+id/mf_ph_name"
+            android:layout_alignBottom="@+id/mf_ph_name"
+            android:layout_marginRight="15.0sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/phone_name"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <!-- 电话号码 -->
+        <EditText
+            android:id="@+id/mf_ph_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mf_ph_name"
+            android:layout_alignLeft="@+id/mf_ph_name"
+            android:layout_alignRight="@+id/mf_ph_name"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/list_kuang"
+            android:inputType="phone|number"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mf_ph_number"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignBottom="@+id/mf_ph_number"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/phone_number"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+        <!-- 电子邮件-->
+        <EditText
+            android:id="@+id/mf_ph_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mf_ph_number"
+            android:layout_alignLeft="@+id/mf_ph_number"
+            android:layout_alignRight="@+id/mf_ph_number"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/list_kuang"
+            android:inputType="text"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mf_ph_email"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignBottom="@+id/mf_ph_email"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/phone_email"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+        <!-- 公司 -->
+        <EditText
+            android:id="@+id/mf_ph_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mf_ph_email"
+            android:layout_alignLeft="@+id/mf_ph_email"
+            android:layout_alignRight="@+id/mf_ph_email"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/list_kuang"
+            android:inputType="text"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mf_ph_company"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignBottom="@+id/mf_ph_company"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/phone_company"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+        <!--地址 -->
+        <EditText
+            android:id="@+id/mf_ph_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mf_ph_company"
+            android:layout_alignLeft="@+id/mf_ph_company"
+            android:layout_alignRight="@+id/mf_ph_company"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/list_kuang"
+            android:inputType="text"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mf_ph_address"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignBottom="@+id/mf_ph_address"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/phone_address"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <Button
+            android:id="@+id/save_phone"
+            android:layout_width="130.0px"
+            android:layout_height="42.0px"
+            android:layout_below="@+id/TextView05"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="30.0px"
+            android:background="#F5F5DE"
+            android:text="@string/phone_save"
+            android:textSize="12.0dip" />
+
+        <Button
+            android:id="@+id/fanhui_phone"
+            android:layout_width="130.0px"
+            android:layout_height="42.0px"
+            android:layout_below="@+id/TextView05"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30.0px"
+            android:layout_marginRight="18.0dip"
+            android:background="#F5F5DE"
+            android:text="@string/phone_fanhui"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+</LinearLayout>
